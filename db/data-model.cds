@@ -39,5 +39,5 @@ entity sales_overview as
     sal.price as salesAmount from Sales as sal
     left join Customers as cust
         on sal.customerID = cust.ID
-    left join Customers as com
+    left join Computers as com
         on sal.computerID = com.ID;
